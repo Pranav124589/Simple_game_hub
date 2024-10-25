@@ -4,17 +4,18 @@ from tic_tac_toe import tic_tac_toe as ttt
 from guess_no import guess_no as gnu
 from menu import menu, logo , loadscr
 
-
+name = input("Enter your name: ")
 loadscr()
 
 play = True
 
 game = menu()
 
-while play:
+while play:#Main Gamelop
     match game:
         case 1:
             gnu()
+
         case 2:
             hg()
         case 3:
@@ -25,10 +26,9 @@ while play:
     if play == "1":
         game = menu()
     else:
-        print("thanks for playing\n".upper())
+        print("\nthanks for playing\n".upper())
         logo()
         quit()
-
 
 
 
